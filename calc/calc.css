@@ -1,0 +1,59 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+}
+body{
+    background: black;
+    height: 100%;
+}
+
+.calc-grid{
+    background-color: wheat;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4,50px);
+    grid-template-rows: minmax(80px, auto) repeat(4,50px);
+    margin: 70px 70px 70px 70px;
+
+}
+.span-two{
+    grid-column: span 2;
+}
+
+/* .calc-grid > button{
+    font-size: 2rem;
+    border:1px solid white;
+    outline: none;
+    background-color: rgba(255, 255, 255, .75);
+} */
+
+.output{
+    grid-column: 1 / -1;
+    background-color: black;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    /* color: rgb(186, 179, 245);
+    font-family: sans-serif;
+    font-weight: bold; */
+    word-wrap: break-word;
+    word-break: break-all;
+
+}
+
+.output .previous-output{
+    color: grey;
+    size: 2rem;
+}
+
+.output .current-output{
+    color: wheat;
+    size: 3rem;
+}
+
+

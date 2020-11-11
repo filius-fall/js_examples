@@ -1,0 +1,37 @@
+#bag{
+    width: 400px;
+    height: 400px;
+    background:url('img/bag.png') center no-repeat;
+    margin: 0 auto;
+    background-size: 70%;
+}
+
+#health{
+    width: 200px;
+    border: 3px solid black;
+    content: "hello";
+    margin: 0 auto 20px;
+}
+
+#health div{
+    height: 20px;
+    background-color: red;
+}
+
+#controls{
+    width: 120px;
+    margin: 0 auto;
+    top: 
+
+}
+
+#controls button{
+    border-radius: 15px;
+    border-color: royalblue;
+    border:2px solid;
+}
+
+#bag.damaged{
+    background:url('img/bag-burst\ \(1\).png') center no-repeat;
+    background-size: 20%;   
+}
